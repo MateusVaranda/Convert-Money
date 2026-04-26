@@ -15,6 +15,8 @@
 <body>
     <img class="img-logo" src="./assets/logo.gif" alt="Logo do Convert Money" class="logo">
 
+    <h1>Convert Money</h1>
+
     <main>
 
         <label>
@@ -26,36 +28,37 @@
 
         <label>
             Convert <b>Para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>E€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">E€ Euro</option>
             </select>
         </label>
 
         <label>
             Valor
-            <input placeholder="Digite o valor:">
+            <input class="input-currency" placeholder="Digite o valor:">
         </label>
 
-        <button>Converter</button>
+        <button class="convert-button">Converter</button>
 
         <section>
             <div class="currency-box">
                 <img src="./assets/brasil.png" alt="logo-brasil">
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0,00</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
 
             <img class="arrow-img" src="./assets/arrow.png" alt="seta-conversao">
 
             <div class="currency-box">
-                <img src="./assets/estados-unidos.png" alt="logo-estados-unidos">
-                <p class="currency">Dólar</p>
+                <img class="currency-img" src="./assets/estados-unidos.png" alt="logo-estados-unidos">
+                <p class="currency" id="currency-name">Dólar</p>
                 <p class="currency-value">US$ 0,00</p>
             </div>
         </section>
 
     </main>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

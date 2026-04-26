@@ -17,6 +17,15 @@ body {
     margin-right: auto;
 }
 
+h1 {
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 24px 0;
+}
+
 main {
     width: 375px;
     border-radius: 20px;
@@ -92,7 +101,7 @@ section {
     color: #777777;
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     font-size: 20px;
     font-weight: 700;
     color: #555555;
